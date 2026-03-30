@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau message — Portfolio {{ ownerName }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .wrapper {
+            max-width: 620px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #4A3F8F, #6C63FF);
+            color: #ffffff;
+            padding: 32px 28px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .header p {
+            margin: 8px 0 0;
+            font-size: 13px;
+            opacity: 0.85;
+        }
+        .body {
+            padding: 28px;
+        }
+        .field {
+            margin-bottom: 18px;
+            padding: 14px 16px;
+            background: #f9f9ff;
+            border-left: 4px solid #6C63FF;
+            border-radius: 0 8px 8px 0;
+        }
+        .field-label {
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #6C63FF;
+            letter-spacing: 0.8px;
+            margin-bottom: 6px;
+        }
+        .field-value {
+            color: #1e1e2e;
+            font-size: 14px;
+            line-height: 1.6;
+            word-break: break-word;
+        }
+        .message-box {
+            border-left-color: #3B82F6;
+            background: #f0f4ff;
+        }
+        .message-box .field-label {
+            color: #3B82F6;
+        }
+        .footer {
+            background: #f4f4f4;
+            text-align: center;
+            padding: 16px 28px;
+            font-size: 11px;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+        }
+        .footer a {
+            color: #6C63FF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>Nouveau message reçu</h1>
+            <p>Portfolio de {{ ownerName }}</p>
+        </div>
+
+        <div class="body">
+            <div class="field">
+                <div class="field-label">Expéditeur</div>
+                <div class="field-value">{{ senderName }}</div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Email</div>
+                <div class="field-value">
+                    <a href="mailto:{{ senderEmail }}" style="color:#6C63FF;">{{ senderEmail }}</a>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="field-label">Sujet</div>
+                <div class="field-value">{{ subject }}</div>
+            </div>
+
+            <div class="field message-box">
+                <div class="field-label">Message</div>
+                <div class="field-value" style="white-space: pre-line;">{{ message }}</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Ce message a été envoyé depuis le <strong>portfolio de {{ ownerName }}</strong>.<br>
+            Pour répondre, cliquez sur « Répondre » — la réponse partira directement à
+            <a href="mailto:{{ senderEmail }}">{{ senderEmail }}</a>.
+        </div>
+    </div>
+</body>
+</html>

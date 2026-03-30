@@ -1,0 +1,52 @@
+<section id="experience" class="py-20 md:py-28 bg-bg-section">
+    <div class="max-w-5xl mx-auto px-4">
+        {# Section header #}
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ 'experience.title'|trans }}</h2>
+            <p class="text-text-secondary">{{ 'experience.subtitle'|trans }}</p>
+            <div class="w-20 h-1 gradient-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+ 
+        {# Timeline #}
+        <div class="relative">
+            {# Vertical line #}
+            <div class="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-0.5 timeline-line"></div>
+ 
+            {% set icons = ['code', 'headphones', 'phone', 'shield'] %}
+            {% for i in 1..4 %}
+                {% set is_left = loop.index is odd %}
+                <div class="relative mb-12 last:mb-0" data-aos="{{ is_left ? 'fade-right' : 'fade-left' }}" data-aos-delay="{{ loop.index * 150 }}">
+                    {# Timeline dot #}
+                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-bg-dark animate-pulse-glow z-10 mt-6"></div>
+ 
+                    {# Card #}
+                    <div class="{{ is_left ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12' }} pl-12 md:pl-0 md:w-1/2">
+                        <div class="bg-bg-card rounded-xl p-6 card-glow hover:-translate-y-1 transition-transform duration-300">
+                            <div class="flex items-start gap-4 mb-3">
+                                <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                                    <i data-lucide="{{ icons[i-1] }}" class="w-5 h-5 text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-lg">{{ ('experience.' ~ i ~ '.role')|trans }}</h3>
+                                    <p class="text-primary text-sm font-medium">{{ ('experience.' ~ i ~ '.company')|trans }}</p>
+                                </div>
+                            </div>
+ 
+                            <div class="flex items-center gap-2 text-text-secondary text-sm mb-3">
+                                <i data-lucide="calendar" class="w-4 h-4"></i>
+                                <span>{{ ('experience.' ~ i ~ '.period')|trans }}</span>
+                                {% if ('experience.' ~ i ~ '.type')|trans != ('experience.' ~ i ~ '.type') %}
+                                    <span class="text-primary/70">{{ ('experience.' ~ i ~ '.type')|trans }}</span>
+                                {% endif %}
+                            </div>
+ 
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                {{ ('experience.' ~ i ~ '.description')|trans }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

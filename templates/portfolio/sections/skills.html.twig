@@ -1,0 +1,62 @@
+<section id="skills" class="py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-4">
+        {# Section header #}
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ 'skills.title'|trans }}</h2>
+            <p class="text-text-secondary">{{ 'skills.subtitle'|trans }}</p>
+            <div class="w-20 h-1 gradient-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+ 
+        <div class="grid lg:grid-cols-2 gap-12">
+            {# Technical Skills #}
+            <div>
+                <h3 class="text-xl font-semibold mb-8 flex items-center gap-2" data-aos="fade-right">
+                    <i data-lucide="code-2" class="w-6 h-6 text-primary"></i>
+                    {{ 'skills.technical'|trans }}
+                </h3>
+ 
+                <div class="space-y-6">
+                    {% for skill in skills %}
+                        <div data-aos="fade-right" data-aos-delay="{{ loop.index * 100 }}">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                                        <i data-lucide="{{ skill.icon }}" class="w-5 h-5 text-primary"></i>
+                                    </div>
+                                    <span class="font-medium">{{ skill.name }}</span>
+                                </div>
+                                <span class="text-primary font-semibold">{{ skill.level }}%</span>
+                            </div>
+                            <div class="w-full bg-bg-card rounded-full h-3">
+                                <div class="skill-bar-fill h-3 rounded-full gradient-bg" data-width="{{ skill.level }}"></div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+ 
+            {# Soft Skills #}
+            <div>
+                <h3 class="text-xl font-semibold mb-8 flex items-center gap-2" data-aos="fade-left">
+                    <i data-lucide="sparkles" class="w-6 h-6 text-primary"></i>
+                    {{ 'skills.soft'|trans }}
+                </h3>
+ 
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {% set soft_icons = ['search', 'clipboard-check', 'wrench', 'layers'] %}
+                    {% for i in 1..4 %}
+                        <div class="bg-bg-card rounded-xl p-6 card-glow hover:-translate-y-1 transition-transform duration-300"
+                             data-aos="zoom-in" data-aos-delay="{{ i * 150 }}">
+                            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                                <i data-lucide="{{ soft_icons[i-1] }}" class="w-6 h-6 text-primary"></i>
+                            </div>
+                            <p class="text-text-secondary text-sm leading-relaxed">
+                                {{ ('skills.soft.' ~ i)|trans }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+<section id="projects" class="py-20 md:py-28 bg-bg-section">
+    <div class="max-w-6xl mx-auto px-4">
+        {# Section header #}
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ 'projects.title'|trans }}</h2>
+            <p class="text-text-secondary">{{ 'projects.subtitle'|trans }}</p>
+            <div class="w-20 h-1 gradient-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+ 
+        {# Project cards #}
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {% set project_icons = ['shopping-cart', 'map-pin'] %}
+            {% for i in 1..2 %}
+                <div class="group relative bg-bg-card rounded-xl overflow-hidden card-glow hover:-translate-y-2 transition-all duration-300"
+                     data-aos="fade-up" data-aos-delay="{{ i * 200 }}">
+                    {# Project visual header #}
+                    <div class="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center relative overflow-hidden">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                            <i data-lucide="{{ project_icons[i-1] }}" class="w-10 h-10 text-primary"></i>
+                        </div>
+ 
+                        {# Decorative circles #}
+                        <div class="absolute -top-8 -right-8 w-32 h-32 bg-primary/10 rounded-full"></div>
+                        <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-accent/10 rounded-full"></div>
+                    </div>
+ 
+                    {# Project info #}
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-semibold">{{ ('projects.' ~ i ~ '.name')|trans }}</h3>
+                        </div>
+ 
+                        <span class="inline-block px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary mb-4">
+                            {{ ('projects.' ~ i ~ '.tech')|trans }}
+                        </span>
+ 
+                        <p class="text-text-secondary text-sm leading-relaxed">
+                            {{ ('projects.' ~ i ~ '.description')|trans }}
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

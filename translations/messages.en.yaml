@@ -1,0 +1,111 @@
+# Navigation
+nav.about: "About"
+nav.skills: "Skills"
+nav.experience: "Experience"
+nav.education: "Education"
+nav.projects: "Projects"
+nav.contact: "Contact"
+ 
+# Hero
+hero.greeting: "Hello, I am"
+hero.description: "Passionate about technological innovation and software development. My enthusiasm for continuous learning drives me to explore the latest trends in software engineering."
+hero.cta.contact: "Contact me"
+hero.cta.cv: "Download CV"
+hero.scroll: "Scroll down"
+ 
+# Typed.js strings
+typed.1: "Junior Software Engineer"
+typed.2: "PHP/Symfony Developer"
+typed.3: "Full Stack Web Developer"
+typed.4: "Technology Enthusiast"
+ 
+# About
+about.title: "About me"
+about.subtitle: "Get to know me"
+about.bio: "Software Engineering student at the University of Mascareignes, I am motivated by creating innovative and efficient solutions. I aim to develop my skills through concrete projects and contribute to dynamic teams."
+about.location: "Quatre-Bornes, Mauritius"
+about.languages.title: "Languages"
+about.stats.experience: "Years of experience"
+about.stats.projects: "Completed projects"
+about.stats.languages: "Languages spoken"
+ 
+# Skills
+skills.title: "Skills"
+skills.subtitle: "My technical and soft skills"
+skills.technical: "Technical Skills"
+skills.soft: "Soft Skills"
+skills.soft.1: "Client needs analysis and tailored solutions"
+skills.soft.2: "Knowledge of administrative and control procedures"
+skills.soft.3: "IT problem solving"
+skills.soft.4: "Strong foundations in software development and databases"
+ 
+# Experience
+experience.title: "Experience"
+experience.subtitle: "My professional journey"
+ 
+experience.1.role: "Web Developer Intern"
+experience.1.company: "Software Lounge Ltd"
+experience.1.period: "May 2025 — July 2025"
+experience.1.description: "Development of a dynamic web form using the Symfony framework (PHP). Implementation of an automatic email system for client confirmation and company notification upon form submission. Work on front-end/back-end integration and data validation."
+ 
+experience.2.role: "Client & Service Provider Coordinator"
+experience.2.company: "E-Volve Solution Ltd"
+experience.2.period: "February 2022 — September 2025"
+experience.2.type: "(Night shift)"
+experience.2.description: "Client needs analysis and transmission to relevant departments following procedures. Recording call-related information in a CRM tool. Reporting anomalies and complaints to the supervisor. Processing supervision alerts and maintenance notices."
+ 
+experience.3.role: "Phone Surveyor"
+experience.3.company: "BVA Datacall"
+experience.3.period: "September 2022 — October 2022"
+experience.3.description: "Conducting computer-assisted telephone surveys to collect marketing data, prospect files and satisfaction studies."
+ 
+experience.4.role: "Customs Controller (Internship)"
+experience.4.company: "DGDA / DR Congo"
+experience.4.period: "November 2018 — December 2018"
+experience.4.description: "Control and surveillance of goods in transit and means of transport at highway checkpoints."
+ 
+# Education
+education.title: "Education"
+education.subtitle: "My academic background"
+ 
+education.1.institution: "University of Mascareignes"
+education.1.degree: "BSc (Hons) Software Engineering"
+education.1.period: "Since 2021"
+education.1.status: "Ongoing"
+ 
+education.2.institution: "Catholic University La Sapienttia"
+education.2.degree: "Information and Communication Sciences"
+education.2.period: "2021"
+ 
+education.3.institution: "Saint Paul College"
+education.3.degree: "Business and Management"
+education.3.period: "2019"
+ 
+# Projects
+projects.title: "Projects"
+projects.subtitle: "My university projects"
+ 
+projects.1.name: "SD Campus Store"
+projects.1.tech: "PHP / Symfony"
+projects.1.description: "Design and development of a university store management web application with PHP and Symfony. Implementation of product, stock and order management features."
+ 
+projects.2.name: "Transport Tracker Project"
+projects.2.tech: "React Native (Group project)"
+projects.2.description: "Development of a mobile application using React Native for tracking university events. Team collaboration on design, development and testing of the application."
+ 
+# Contact
+contact.title: "Contact"
+contact.subtitle: "Feel free to reach out"
+contact.email.label: "Email"
+contact.phone.label: "Phone"
+contact.address.label: "Address"
+contact.cta: "Send me an email"
+ 
+# Footer
+footer.built: "Built with"
+footer.rights: "All rights reserved."
+footer.back_to_top: "Back to top"
+ 
+# Language switcher
+lang.switch: "SW"
+lang.current: "EN"

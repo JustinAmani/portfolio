@@ -1,0 +1,137 @@
+<section id="contact" class="py-20 md:py-28">
+    <div class="max-w-5xl mx-auto px-4">
+        {# Section header #}
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ 'contact.title'|trans }}</h2>
+            <p class="text-text-secondary">{{ 'contact.subtitle'|trans }}</p>
+            <div class="w-20 h-1 gradient-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+
+            {# ── Contact Info column ── #}
+            <div class="space-y-5" data-aos="fade-right">
+
+                <a href="mailto:{{ email }}"
+                   class="flex items-center gap-4 bg-bg-card rounded-xl p-6 card-glow hover:-translate-y-1 transition-transform duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="mail" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <div>
+                        <p class="text-text-secondary text-sm">{{ 'contact.email.label'|trans }}</p>
+                        <p class="text-text-primary font-medium group-hover:text-primary transition-colors">{{ email }}</p>
+                    </div>
+                </a>
+
+                <a href="tel:{{ phone }}"
+                   class="flex items-center gap-4 bg-bg-card rounded-xl p-6 card-glow hover:-translate-y-1 transition-transform duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                        <i data-lucide="phone" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <div>
+                        <p class="text-text-secondary text-sm">{{ 'contact.phone.label'|trans }}</p>
+                        <p class="text-text-primary font-medium group-hover:text-primary transition-colors">{{ phone }}</p>
+                    </div>
+                </a>
+
+                <div class="flex items-center gap-4 bg-bg-card rounded-xl p-6 card-glow">
+                    <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-7 h-7 text-primary"></i>
+                    </div>
+                    <div>
+                        <p class="text-text-secondary text-sm">{{ 'contact.address.label'|trans }}</p>
+                        <p class="text-text-primary font-medium">{{ address }}</p>
+                    </div>
+                </div>
+
+                {# Availability badge #}
+                <div class="bg-green-500/10 border border-green-500/20 rounded-xl p-5">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse inline-block"></span>
+                        <span class="text-green-400 font-semibold text-sm">Disponible</span>
+                    </div>
+                    <p class="text-text-secondary text-sm leading-relaxed">
+                        Ouvert aux opportunités de stage, freelance et emploi en développement web ou mobile.
+                    </p>
+                </div>
+
+                {# Social links #}
+                <div class="flex gap-3 pt-2">
+                    <a href="mailto:{{ email }}"
+                       class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-text-secondary hover:text-primary transition-all duration-300 hover:scale-110"
+                       title="Email">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/justin-amani-b61233287/" target="_blank" rel="noopener noreferrer"
+                       class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-text-secondary hover:text-primary transition-all duration-300 hover:scale-110"
+                       title="LinkedIn">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://github.com/JustinAmani" target="_blank" rel="noopener noreferrer"
+                       class="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-primary/50 hover:bg-primary/10 flex items-center justify-center text-text-secondary hover:text-primary transition-all duration-300 hover:scale-110"
+                       title="GitHub">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            {# ── Contact Form column ── #}
+            <div data-aos="fade-left">
+                <div class="bg-bg-card rounded-xl p-8 card-glow">
+                    <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5 text-primary"></i>
+                        Envoyez-moi un message
+                    </h3>
+
+                    <form id="contact-form" action="{{ path('app_contact') }}" method="POST" class="space-y-4" novalidate>
+
+                        <div>
+                            <label for="contact_name" class="block text-text-secondary text-sm mb-1.5 font-medium">
+                                Nom complet *
+                            </label>
+                            <input type="text" id="contact_name" name="contact[name]" required autocomplete="name"
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none"
+                                   placeholder="Votre nom complet">
+                        </div>
+
+                        <div>
+                            <label for="contact_email" class="block text-text-secondary text-sm mb-1.5 font-medium">
+                                Adresse email *
+                            </label>
+                            <input type="email" id="contact_email" name="contact[email]" required autocomplete="email"
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none"
+                                   placeholder="votre@email.com">
+                        </div>
+
+                        <div>
+                            <label for="contact_subject" class="block text-text-secondary text-sm mb-1.5 font-medium">
+                                Sujet *
+                            </label>
+                            <input type="text" id="contact_subject" name="contact[subject]" required
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none"
+                                   placeholder="Sujet de votre message">
+                        </div>
+
+                        <div>
+                            <label for="contact_message" class="block text-text-secondary text-sm mb-1.5 font-medium">
+                                Message *
+                            </label>
+                            <textarea id="contact_message" name="contact[message]" rows="5" required
+                                      class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:border-primary focus:ring-1 focus:ring-primary transition-all outline-none resize-none"
+                                      placeholder="Votre message..."></textarea>
+                        </div>
+
+                        <button type="submit" id="contact-submit"
+                                class="btn-primary w-full flex items-center justify-center gap-2 py-3.5">
+                            <i data-lucide="send" class="w-5 h-5" id="submit-icon-lucide"></i>
+                            <span id="submit-text">Envoyer le message</span>
+                        </button>
+
+                        <div id="form-message" class="hidden rounded-xl p-4 text-sm font-medium" role="alert"></div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

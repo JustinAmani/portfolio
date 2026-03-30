@@ -1,0 +1,85 @@
+<section id="about" class="py-20 md:py-28 bg-bg-section">
+    <div class="max-w-6xl mx-auto px-4">
+        {# Section header #}
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">{{ 'about.title'|trans }}</h2>
+            <p class="text-text-secondary">{{ 'about.subtitle'|trans }}</p>
+            <div class="w-20 h-1 gradient-bg mx-auto mt-4 rounded-full"></div>
+        </div>
+ 
+        <div class="grid md:grid-cols-3 gap-12 items-center">
+            {# Photo #}
+            <div class="flex justify-center" data-aos="fade-right">
+                <div class="relative w-56 h-56 md:w-64 md:h-64">
+                    <div class="absolute inset-0 rounded-2xl gradient-bg opacity-20 blur-xl"></div>
+                    <img src="{{ asset('images/photo.jpg') }}"
+                         alt="Amani Kajemba Justin"
+                         class="relative w-full h-full object-cover rounded-2xl border-2 border-primary/30 shadow-lg shadow-primary/10">
+                </div>
+            </div>
+
+            {# Bio text #}
+            <div data-aos="fade-right">
+                <p class="text-text-secondary leading-relaxed text-lg mb-8">
+                    {{ 'about.bio'|trans }}
+                </p>
+ 
+                <div class="flex items-center gap-3 text-text-secondary mb-4">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                    <span>{{ 'about.location'|trans }}</span>
+                </div>
+ 
+                <div class="flex items-center gap-3 text-text-secondary mb-4">
+                    <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                    <span>{{ email }}</span>
+                </div>
+ 
+                <div class="flex items-center gap-3 text-text-secondary">
+                    <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                    <span>{{ phone }}</span>
+                </div>
+            </div>
+ 
+            {# Stats & Languages #}
+            <div class="space-y-6 md:col-span-1">
+                {# Stats grid #}
+                <div class="grid grid-cols-3 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="bg-bg-card rounded-xl p-6 text-center card-glow">
+                        <div class="text-3xl font-bold gradient-text mb-2">3+</div>
+                        <div class="text-text-secondary text-sm">{{ 'about.stats.experience'|trans }}</div>
+                    </div>
+                    <div class="bg-bg-card rounded-xl p-6 text-center card-glow">
+                        <div class="text-3xl font-bold gradient-text mb-2">2+</div>
+                        <div class="text-text-secondary text-sm">{{ 'about.stats.projects'|trans }}</div>
+                    </div>
+                    <div class="bg-bg-card rounded-xl p-6 text-center card-glow">
+                        <div class="text-3xl font-bold gradient-text mb-2">3</div>
+                        <div class="text-text-secondary text-sm">{{ 'about.stats.languages'|trans }}</div>
+                    </div>
+                </div>
+ 
+                {# Languages #}
+                <div class="bg-bg-card rounded-xl p-6 card-glow" data-aos="fade-left" data-aos-delay="400">
+                    <h3 class="text-lg font-semibold mb-4 flex items-center gap-2">
+                        <i data-lucide="languages" class="w-5 h-5 text-primary"></i>
+                        {{ 'about.languages.title'|trans }}
+                    </h3>
+                    <div class="space-y-3">
+                        {% for lang in languages %}
+                            <div>
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span>{{ lang.name }}</span>
+                                    <span class="text-text-secondary">{{ lang.level }}%</span>
+                                </div>
+                                <div class="w-full bg-bg-dark rounded-full h-2">
+                                    <div class="skill-bar-fill h-2 rounded-full gradient-bg" data-width="{{ lang.level }}"></div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

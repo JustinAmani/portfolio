@@ -1,0 +1,111 @@
+# Navigation
+nav.about: "À propos"
+nav.skills: "Compétences"
+nav.experience: "Expérience"
+nav.education: "Formation"
+nav.projects: "Projets"
+nav.contact: "Contact"
+ 
+# Hero
+hero.greeting: "Bonjour, je suis"
+hero.description: "Passionné par l'innovation technologique et le développement de logiciels. Mon enthousiasme pour l'apprentissage continu me pousse à explorer les dernières tendances en ingénierie logicielle."
+hero.cta.contact: "Me contacter"
+hero.cta.cv: "Télécharger CV"
+hero.scroll: "Défiler vers le bas"
+ 
+# Typed.js strings
+typed.1: "Ingénieur Logiciel Junior"
+typed.2: "Développeur PHP/Symfony"
+typed.3: "Développeur Web Full Stack"
+typed.4: "Passionné de Technologie"
+ 
+# About
+about.title: "À propos de moi"
+about.subtitle: "Apprenez à me connaître"
+about.bio: "Étudiant en génie logiciel à l'Université des Mascareignes, je suis motivé par la création de solutions innovantes et efficaces. Je souhaite développer mes compétences à travers des projets concrets et contribuer à des équipes dynamiques."
+about.location: "Quatre-Bornes, Maurice"
+about.languages.title: "Langues"
+about.stats.experience: "Années d'expérience"
+about.stats.projects: "Projets réalisés"
+about.stats.languages: "Langues parlées"
+ 
+# Skills
+skills.title: "Compétences"
+skills.subtitle: "Mes compétences techniques et transversales"
+skills.technical: "Compétences Techniques"
+skills.soft: "Compétences Transversales"
+skills.soft.1: "Analyse des besoins clients et proposition de solutions adaptées"
+skills.soft.2: "Connaissance des procédures administratives et de contrôle"
+skills.soft.3: "Résolution de problèmes informatiques"
+skills.soft.4: "Bases solides en développement logiciel et bases de données"
+ 
+# Experience
+experience.title: "Expérience"
+experience.subtitle: "Mon parcours professionnel"
+ 
+experience.1.role: "Développeur Web Stagiaire"
+experience.1.company: "Software Lounge Ltd"
+experience.1.period: "Mai 2025 — Juillet 2025"
+experience.1.description: "Développement d'un formulaire web dynamique avec le framework Symfony (PHP). Implémentation d'un système d'envoi automatique d'emails de confirmation au client et de notification à l'entreprise lors de la soumission du formulaire. Travail sur l'intégration front-end/back-end et la validation des données."
+ 
+experience.2.role: "Coordinateur Clients & Prestataires"
+experience.2.company: "E-Volve Solution Ltd"
+experience.2.period: "Février 2022 — Septembre 2025"
+experience.2.type: "(Travail de nuit)"
+experience.2.description: "Analyse des besoins clients et transmission aux services concernés en respectant les procédures. Enregistrement des informations relatives aux appels dans un outil CRM. Remontée des anomalies et réclamations au responsable. Traitement des alertes de supervision et avis de maintenance."
+ 
+experience.3.role: "Enquêteur Téléphonique"
+experience.3.company: "BVA Datacall"
+experience.3.period: "Septembre 2022 — Octobre 2022"
+experience.3.description: "Réalisation d'enquêtes téléphoniques assistées par ordinateur pour collecter des données marketing, fichiers prospects et études de satisfaction."
+ 
+experience.4.role: "Contrôleur en Douane (Stage)"
+experience.4.company: "DGDA / RD Congo"
+experience.4.period: "Novembre 2018 — Décembre 2018"
+experience.4.description: "Contrôle et surveillance des marchandises en mouvement et des moyens de transport aux points de passage autoroutiers."
+ 
+# Education
+education.title: "Formation"
+education.subtitle: "Mon parcours académique"
+ 
+education.1.institution: "Université des Mascareignes"
+education.1.degree: "BSc (Hons) Software Engineering"
+education.1.period: "Depuis 2021"
+education.1.status: "En cours"
+ 
+education.2.institution: "Université Catholique La Sapienttia"
+education.2.degree: "Science de l'information et de la communication"
+education.2.period: "2021"
+ 
+education.3.institution: "Collège Saint Paul"
+education.3.degree: "Commercial et gestion"
+education.3.period: "2019"
+ 
+# Projects
+projects.title: "Projets"
+projects.subtitle: "Mes projets universitaires"
+ 
+projects.1.name: "SD Campus Store"
+projects.1.tech: "PHP / Symfony"
+projects.1.description: "Conception et développement d'une application web de gestion de magasin universitaire avec PHP et Symfony. Mise en place des fonctionnalités de gestion des produits, des stocks et des commandes."
+ 
+projects.2.name: "Transport Tracker Project"
+projects.2.tech: "React Native (Projet en groupe)"
+projects.2.description: "Développement d'une application mobile en React Native pour le suivi des événements universitaires. Travail collaboratif en équipe sur la conception, le développement et les tests de l'application."
+ 
+# Contact
+contact.title: "Contact"
+contact.subtitle: "N'hésitez pas à me contacter"
+contact.email.label: "Email"
+contact.phone.label: "Téléphone"
+contact.address.label: "Adresse"
+contact.cta: "Envoyez-moi un email"
+ 
+# Footer
+footer.built: "Construit avec"
+footer.rights: "Tous droits réservés."
+footer.back_to_top: "Retour en haut"
+ 
+# Language switcher
+lang.switch: "EN"
+lang.current: "FR"

@@ -1,0 +1,118 @@
+# Navigation
+nav.about: "Kuhusu"
+nav.skills: "Ujuzi"
+nav.experience: "Uzoefu"
+nav.education: "Elimu"
+nav.projects: "Miradi"
+nav.contact: "Wasiliana"
+
+# Hero
+hero.greeting: "Habari, mimi ni"
+hero.description: "Nina shauku ya uvumbuzi wa kiteknolojia na utengenezaji wa programu. Juhudi zangu za kujifunza kila wakati zinanisukuma kuchunguza mwelekeo mpya wa uhandisi wa programu."
+hero.cta.contact: "Wasiliana nami"
+hero.cta.cv: "Pakua CV"
+hero.scroll: "Tembeza chini"
+
+# Typed.js strings
+typed.1: "Mhandisi Mdogo wa Programu"
+typed.2: "Mtengenezaji PHP/Symfony"
+typed.3: "Mtengenezaji Wavuti Kamili"
+typed.4: "Mpenda Teknolojia"
+
+# About
+about.title: "Kuhusu mimi"
+about.subtitle: "Jifunze kunijua"
+about.bio: "Mwanafunzi wa uhandisi wa programu katika Chuo Kikuu cha Mascareignes, ninahamasishwa na uundaji wa suluhisho za kisasa na bora. Nataka kukuza ujuzi wangu kupitia miradi halisi na kuchangia katika timu zenye nguvu."
+about.location: "Quatre-Bornes, Mauritius"
+about.languages.title: "Lugha"
+about.stats.experience: "Miaka ya uzoefu"
+about.stats.projects: "Miradi iliyokamilika"
+about.stats.languages: "Lugha zinazozungumzwa"
+
+# Skills
+skills.title: "Ujuzi"
+skills.subtitle: "Ujuzi wangu wa kiufundi na wa jumla"
+skills.technical: "Ujuzi wa Kiufundi"
+skills.soft: "Ujuzi wa Jumla"
+skills.soft.1: "Uchambuzi wa mahitaji ya wateja na mapendekezo ya suluhisho"
+skills.soft.2: "Ujuzi wa taratibu za utawala na udhibiti"
+skills.soft.3: "Utatuzi wa matatizo ya kompyuta"
+skills.soft.4: "Msingi imara wa utengenezaji programu na hifadhidata"
+
+# Experience
+experience.title: "Uzoefu"
+experience.subtitle: "Safari yangu ya kitaaluma"
+
+experience.1.role: "Mtengenezaji Wavuti Msaidizi"
+experience.1.company: "Software Lounge Ltd"
+experience.1.period: "Mei 2025 — Julai 2025"
+experience.1.description: "Utengenezaji wa fomu ya wavuti ya kisasa kwa kutumia mfumo wa Symfony (PHP). Utekelezaji wa mfumo wa kutuma barua pepe kiotomatiki kwa uthibitisho wa mteja na arifa ya kampuni baada ya kuwasilisha fomu. Kazi ya kuunganisha mbele/nyuma na uthibitishaji wa data."
+
+experience.2.role: "Mratibu wa Wateja na Watoa Huduma"
+experience.2.company: "E-Volve Solution Ltd"
+experience.2.period: "Februari 2022 — Septemba 2025"
+experience.2.type: "(Zamu ya usiku)"
+experience.2.description: "Uchambuzi wa mahitaji ya wateja na kupeleka kwa idara husika kufuatia taratibu. Kurekodi taarifa za simu katika zana ya CRM. Kuripoti upotoshaji na malalamiko kwa msimamizi. Kushughulikia arifa za usimamizi na matangazo ya matengenezo."
+
+experience.3.role: "Mpelelezi wa Simu"
+experience.3.company: "BVA Datacall"
+experience.3.period: "Septemba 2022 — Oktoba 2022"
+experience.3.description: "Kufanya uchunguzi wa simu kwa msaada wa kompyuta kukusanya data za masoko, faili za wateja watarajiwa na tafiti za kuridhika."
+
+experience.4.role: "Mdhibiti wa Forodha (Mafunzo)"
+experience.4.company: "DGDA / DRC"
+experience.4.period: "Novemba 2018 — Desemba 2018"
+experience.4.description: "Udhibiti na ulinzi wa bidhaa zinazosogea na njia za usafiri kwenye vituo vya ukaguzi vya barabara kuu."
+
+# Education
+education.title: "Elimu"
+education.subtitle: "Historia yangu ya masomo"
+
+education.1.institution: "Chuo Kikuu cha Mascareignes"
+education.1.degree: "BSc (Hons) Software Engineering"
+education.1.period: "Tangu 2021"
+education.1.status: "Inaendelea"
+
+education.2.institution: "Chuo Kikuu Katoliki La Sapienttia"
+education.2.degree: "Sayansi ya Habari na Mawasiliano"
+education.2.period: "2021"
+
+education.3.institution: "Shule ya Sekondari Saint Paul"
+education.3.degree: "Biashara na Usimamizi"
+education.3.period: "2019"
+
+# Projects
+projects.title: "Miradi"
+projects.subtitle: "Miradi yangu ya chuo kikuu"
+
+projects.1.name: "SD Campus Store"
+projects.1.tech: "PHP / Symfony"
+projects.1.description: "Kubuni na kutengeneza programu ya wavuti ya kusimamia duka la chuo kikuu kwa PHP na Symfony. Utekelezaji wa vipengele vya kusimamia bidhaa, hisa na maagizo."
+
+projects.2.name: "Transport Tracker Project"
+projects.2.tech: "React Native (Mradi wa kikundi)"
+projects.2.description: "Utengenezaji wa programu ya simu kwa kutumia React Native kwa ajili ya kufuatilia matukio ya chuo kikuu. Ushirikiano wa timu katika muundo, utengenezaji na upimaji wa programu."
+
+# Contact
+contact.title: "Wasiliana"
+contact.subtitle: "Usisite kuwasiliana nami"
+contact.email.label: "Barua pepe"
+contact.phone.label: "Simu"
+contact.address.label: "Anwani"
+contact.cta: "Nitumie barua pepe"
+
+# Footer
+footer.built: "Imejengwa na"
+footer.rights: "Haki zote zimehifadhiwa."
+footer.back_to_top: "Rudi juu"
+
+# Language switcher
+lang.switch: "FR"
+lang.current: "SW"
+
+# Contact form
+contact.form.name: "Jina kamili"
+contact.form.email: "Anwani ya barua pepe"
+contact.form.subject: "Mada"
+contact.form.message: "Ujumbe"
+contact.form.send: "Tuma ujumbe"
