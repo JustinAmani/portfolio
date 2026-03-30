@@ -64,7 +64,7 @@ class PortfolioController extends AbstractController
 
             try {
                 $email = (new Email())
-                    ->from(new Address('noreply@portfolio.local', 'Portfolio - ' . self::OWNER_NAME))
+                    ->from(new Address(self::CONTACT_EMAIL, 'Portfolio - ' . self::OWNER_NAME))
                     ->to(self::CONTACT_EMAIL)
                     ->replyTo(new Address($data['email'], $data['name']))
                     ->subject('Portfolio — Message de ' . $data['name'] . ' : ' . $data['subject'])
