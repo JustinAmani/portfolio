@@ -42,5 +42,3 @@ Thumbs.db
 # Composer
 /composer.phar
 
-# Profile photo (add your own — not committed)
-/public/images/profile.jpg
