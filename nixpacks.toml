@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["php82", "php82Extensions.intl", "php82Extensions.pdo", "php82Extensions.mbstring", "php82Extensions.xml", "php82Extensions.curl", "php82Extensions.zip", "nodejs_20", "nodePackages.npm"]
+
+[phases.install]
+cmds = [
+    "composer install --no-dev --optimize-autoloader --no-interaction",
+    "npm install",
+    "npm run build"
+]
+
+[phases.build]
+cmds = [
+    "APP_ENV=prod php bin/console cache:warmup --no-debug"
+]
+
+[start]
+cmd = "php -S 0.0.0.0:$PORT -t public/"
