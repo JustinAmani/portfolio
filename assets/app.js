@@ -291,5 +291,16 @@ document.addEventListener('DOMContentLoaded', () => {
             barObserver.observe(bar);
         });
     }
+
+    // Close language dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        ['lang-dropdown-desktop', 'lang-dropdown-mobile'].forEach(id => {
+            const wrapper = document.getElementById(id);
+            if (wrapper && !wrapper.contains(e.target)) {
+                const menu = wrapper.querySelector('[id^="lang-menu"]');
+                if (menu) menu.classList.add('hidden');
+            }
+        });
+    });
 });
 
